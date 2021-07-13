@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mousic">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Mousic">
+        <activity android:name=".QuizQuestionsActivity"
+            android:label="Стандартные интервалы"
+            android:parentActivityName = ".standart_intervals_theory"/>
+        <activity android:name=".ResultActivity"/>
+        <activity android:name=".standart_intervals_theory"
+            android:label="Стандартные интеравалы"
+            android:parentActivityName = ".Intervals_main" ></activity>
+        <activity android:name=".TheoryReader"
+            android:label="Теория"
+            android:parentActivityName = ".Intervals_main" ></activity>
+        <activity android:name=".Chords_main"
+            android:label="Аккорды"
+            android:parentActivityName = ".MainActivity" />
+        <activity android:name=".Modes_main"
+            android:label="Лады"
+            android:parentActivityName = ".MainActivity" />
+        <activity android:name=".Rhythm_main"
+            android:label="Ритм"
+            android:parentActivityName = ".MainActivity" />
+        <activity android:name=".Intervals_main"
+            android:label="@string/intervals"
+            android:parentActivityName = ".MainActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
